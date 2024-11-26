@@ -13,6 +13,12 @@
   height: 86px; */
   overflow: hidden;
 }
+.image-profile{
+width: 80%;
+padding: 15%;
+height: 50%;
+margin-top: 10%;
+}
 
 .topnav a {
   float:right;
@@ -31,6 +37,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  margin-top: 20%;
 }
 .aa{
     float: left !important;;
@@ -46,10 +53,11 @@
 font-weight: 700;
 font-size: 64px;
 line-height: 78.02px;
+margin-top: 25%;
 }
 
 .left-paragraph{
-    width: 70%;
+    width: 90%;
 }
 
 .left-paragraph button{
@@ -87,14 +95,23 @@ font-size: 32px;
 line-height: 39.01px;
 }
 
-table tr th td{
+/* table tr th td{
  border: 1px solid black;
-}
+} */
 
-.image img{
-   height: 30%
-   width
-}
+table {
+            width: 100%;
+            border-collapse: collapse; /* Ensures borders are not doubled */
+        }
+
+        table, th, td {
+            border: 1px solid black; /* Adds border to the table, header, and cells */
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left; /* Aligns text to the left */
+        }
 
 
 input{
@@ -104,6 +121,34 @@ input{
     width: 80%;
     margin: 5px;
 }
+
+    .content-container {
+            display: flex;
+            /* align-items: flex-start; */
+            padding: 36px;
+            margin-top: -11%;
+        }
+
+.image-left{
+    float: left;
+}
+.conatct-container{
+    margin-top: -10%;
+    padding: 3%;
+}
+
+
+.table{
+    margin-top: 5%
+}
+
+
+table tr:last-child {
+            background-color: #FCAF02; /* Highlight the last row with a yellow background */
+            font-weight: bold; /* Makes the text bold */
+        }
+
+
 
 </style>
 <body>
@@ -115,7 +160,7 @@ input{
         <a>About</a>
    
       </div>
-
+<div class="content-container">
       <div class="left-paragraph">
        <h4> Startup Landing Page</h4>
        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dicta,
@@ -124,15 +169,21 @@ input{
   <button> Login </button>
       </div>
 
-      <h3>Contact Us</h3>
+      <div class="image-left">
+        <img class="image-profile" src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="CEO img">
+      </div>
+    </div>
+
+    <div class="conatct-container">
+      <h3 class="Contact">Contact Us</h3>
       <input placeholder="name"><br>
       <input placeholder="Email">
       <input placeholder="Mobile Number">
       <input placeholder="city">
 
       <button class="submit-form">Submit form</button>
-
-      <div>
+    
+      <div class="table">
         <table>
             <tr>
                 <th>SNO.</th>
@@ -185,9 +236,7 @@ input{
 
         </table>
       </div>
-
-      <div class="image">
-        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="CEO img">
-      </div>
+    </div>
+     
 </body>
 </html>
